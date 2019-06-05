@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>OXO</title>
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <!-- Scripts -->
+    <script src="/index.js" defer></script>
+</head>
+<body>
+    <h1 class="text-center my-5">Player's turn: <span id="turn">O</span></h1>
+    <p id="error" class="alert alert-danger text-center w-25 mx-auto d-none">Choose another square</p>
+    <p id="victory" class="alert alert-success text-center w-25 mx-auto d-none"><span></span> won! ( <span id="wonWhere"></span> )</p>
+    <div id="board" class="row w-25 mx-auto">
+        <div class="case col-4 bg-light border border-dark justify-content-center align-items-center d-flex" data-symbol="?"><h1></h1></div>
+        <div class="case col-4 bg-light border border-dark justify-content-center align-items-center d-flex" data-symbol="?"><h1></h1></div>
+        <div class="case col-4 bg-light border border-dark justify-content-center align-items-center d-flex" data-symbol="?"><h1></h1></div>
+        <div class="case col-4 bg-light border border-dark justify-content-center align-items-center d-flex" data-symbol="?"><h1></h1></div>
+        <div class="case col-4 bg-light border border-dark justify-content-center align-items-center d-flex" data-symbol="?"><h1></h1></div>
+        <div class="case col-4 bg-light border border-dark justify-content-center align-items-center d-flex" data-symbol="?"><h1></h1></div>
+        <div class="case col-4 bg-light border border-dark justify-content-center align-items-center d-flex" data-symbol="?"><h1></h1></div>
+        <div class="case col-4 bg-light border border-dark justify-content-center align-items-center d-flex" data-symbol="?"><h1></h1></div>
+        <div class="case col-4 bg-light border border-dark justify-content-center align-items-center d-flex" data-symbol="?"><h1></h1></div>
+    </div>
+    <div class="d-flex justify-content-center mt-3">
+        <button class="btn btn-primary">Reset</button>
+    </div>
+</body>
+</html>

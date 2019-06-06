@@ -112,6 +112,6 @@ let checkWin = () => {
         disabled = true; //prevents the players from playng while it's over
         setTimeout(() => {
             reset();
-        }, 1500);
+        }, 2000);
     }
 }
